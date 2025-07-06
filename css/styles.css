@@ -428,7 +428,10 @@ img {
 .social-link-footer:focus {
   background-color: #31d0aa;
 }
-
+.form-subscribe {
+  display: flex;
+  gap: 24px;
+}
 .footer-input-container-text {
   font-weight: 500;
   color: #fff;
@@ -444,10 +447,13 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 264px;
   height: 40px;
-  /* margin-right: 24px; */
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 .footer-email-input::placeholder {
-  padding-left: 16px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -474,8 +480,6 @@ img {
   fill: white;
 }
 .footer-input-btn-wraper {
-  display: inline-flex;
-  gap: 24px;
 }
 
 /* footer end */
@@ -530,6 +534,7 @@ img {
   margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 }
 .icon-close {
   fill: #2e2f42;
@@ -613,6 +618,8 @@ img {
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-textarea-container {
   margin-bottom: 16px;
 }
 .checkbox-wraper {
@@ -648,11 +655,11 @@ img {
   fill: white;
 }
 
-.label-privacy input:checked + .custom-mark {
+.modal-checkbox:checked + label .custom-mark {
   background-color: #404bbf;
   border: none;
 }
-.label-privacy input:checked + .custom-mark .checkbox-mark {
+.modal-checkbox:checked + label .checkbox-mark {
   opacity: 1;
 }
 
