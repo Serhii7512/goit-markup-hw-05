@@ -657,7 +657,6 @@ img {
 }
 .checkbox-mark {
   opacity: 0;
-  fill: #f4f4fd;
 }
 
 .modal-checkbox:checked + label .custom-mark {
@@ -666,6 +665,7 @@ img {
 }
 .modal-checkbox:checked + label .checkbox-mark {
   opacity: 1;
+  fill: #f4f4fd;
 }
 
 .privaci-policy {
